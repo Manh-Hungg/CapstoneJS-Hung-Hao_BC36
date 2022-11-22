@@ -342,7 +342,9 @@ ul {
 .modal-footer a{
     color:#2196F3;
 }
-
+button#buy-tickets {
+  margin-bottom: 5px;
+}
 
 @keyframes modalFadeIn{
     from{opacity:0;
