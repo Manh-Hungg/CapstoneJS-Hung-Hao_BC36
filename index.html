@@ -18,12 +18,44 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <div class="row pd-t-50">
-        <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
+    <header class="header__pooch">
+        <nav class="navbar navbar-expand-lg navbar-light bg-r">
+
+         <i class="ficon f-logo"></i><span>Sốp</span>
+          <div class="collapse navbar-collapse" id="poochNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link">Điện thoại</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Tablet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Máy dởm giá cao</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Phụ kiện</a>
+              </li>
+              <ul>
+                <li><i class="fa-solid fa-cart-shopping js-buy-tickets"></i></li>
+              </ul>
+            </ul>
+    
+          </div>
+        </nav> 
+    
+       
+      </header>
+    
+    <div class="row pd-50 img">
+        <div class="col-lg-3 col-md-6 item mt-md-0 mt-5 ">
             <div class="card">
                 <div class="card-header p-0 position-relative">
                     <a href="#">
-                        <img class="card-img-bottom " src="./asset/img/g1.jpg" alt="Card image cap">
+                        <img class="card-img-bottom " src="./CSS/img/iphone-11-64gb-6.1.png" alt="Card image cap">
                     </a>
                     
                 </div>
@@ -36,7 +68,7 @@
                     </div>
                     <ul class="blog-meta">
                         <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-comment"></span> 30 comments</span>
+                            <span class="meta-value"> <i class="fa-solid fa-plus"></i><span>  </span><i class="fa-solid fa-minus"></i>
                         </li>
                         <li class="meta-item blog-students">
                             <span class="meta-value"> <span class="fa fa-eye"></span> 30 Views</span>
@@ -45,145 +77,86 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
-            <div class="card">
-                <div class="card-header p-0 position-relative">
-                    <a href="#">
-                        <img class="card-img-bottom d-block" src="./asset/img/g2.jpg" alt="Card image cap">
-                    </a>
-                  
-                </div>
-                <div class="card-body card-shadow">
-                    <a href="#" class="blog-post">Delivering happiness for Pets
-                    </a>
-                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                        vitae sit.</p>
-                    <div class="author align-items-center mt-3 mb-1">
-                        <a href="#author">Johnson smith</a> - <span class="meta-value"> May 23, 2020 </span>
-                    </div>
-                    <ul class="blog-meta">
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-comment"></span> 30 comments</span>
-                        </li>
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-eye"></span> 30 Views</span>
-                        </li>
-                    </ul>
-                </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-solid fa-xmark"></i>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
-            <div class="card">
-                <div class="card-header p-0 position-relative">
-                    <a href="#">
-                        <img class="card-img-bottom d-block" src="./asset/img/g3.jpg" alt="Card image cap">
-                    </a>
-                   
-                </div>
-                <div class="card-body card-shadow">
-                    <a href="#" class="blog-post">Delivering happiness for Pets
-                    </a>
-                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                        vitae sit.</p>
-                    <div class="author align-items-center mt-3 mb-1">
-                        <a href="#author">Johnson smith</a> - <span class="meta-value"> May 23, 2020 </span>
-                    </div>
-                    <ul class="blog-meta">
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-comment"></span> 30 comments</span>
-                        </li>
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-eye"></span> 30 Views</span>
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="modal-header">
+                <i class="modal-heading-icon fa-solid fa-bag-shopping"></i>
+                Shopping Cart
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
-            <div class="card">
-                <div class="card-header p-0 position-relative">
-                    <a href="#">
-                        <img class="card-img-bottom d-block" src="./asset/img/g4.jpg" alt="Card image cap">
-                    </a>
-                   
-                </div>
-                <div class="card-body card-shadow">
-                    <a href="#" class="blog-post">Delivering happiness for Pets
-                    </a>
-                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                        vitae sit.</p>
-                    <div class="author align-items-center mt-3 mb-1">
-                        <a href="#author">Johnson smith</a> - <span class="meta-value"> May 23, 2020 </span>
-                    </div>
-                    <ul class="blog-meta">
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-comment"></span> 30 comments</span>
-                        </li>
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-eye"></span> 30 Views</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
-            <div class="card">
-                <div class="card-header p-0 position-relative">
-                    <a href="#">
-                        <img class="card-img-bottom d-block" src="./asset/img/g5.jpg" alt="Card image cap">
-                    </a>
-                </div>
-                <div class="card-body card-shadow">
-                    <a href="#" class="blog-post">Delivering happiness for Pets
-                    </a>
-                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                        vitae sit.</p>
-                    <div class="author align-items-center mt-3 mb-1">
-                        <a href="#author">Johnson smith</a> - <span class="meta-value"> May 23, 2020 </span>
-                    </div>
-                    <ul class="blog-meta">
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-comment"></span> 30 comments</span>
-                        </li>
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-eye"></span> 30 Views</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
-            <div class="card">
-                <div class="card-header p-0 position-relative">
-                    <a href="#">
-                        <img class="card-img-bottom d-block" src="./asset/img/g6.jpg" alt="Card image cap">
-                    </a>
-                </div>
-                <div class="card-body card-shadow">
-                    <a href="#" class="blog-post">Delivering happiness for Pets
-                    </a>
-                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                        vitae sit.</p>
-                    <div class="author align-items-center mt-3 mb-1">
-                        <a href="#author">Johnson smith</a> - <span class="meta-value"> May 23, 2020 </span>
-                    </div>
-                    <ul class="blog-meta">
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-comment"></span> 30 comments</span>
-                        </li>
-                        <li class="meta-item blog-students">
-                            <span class="meta-value"> <span class="fa fa-eye"></span> 30 Views</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            <div class="modal-body">
+
+                <div class="tblSanPham" id="tblSanPham">
+                    <!-- BEGIN TABLE SẢN PHẨM -->
+                    <table class="table table-bordered">
+                      <thead>
+                          <th>Hình Ảnh</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Mô Tả</th>                
+                        <th><i class="fa-solid fa-trash"></i></th>
+                      </thead>
+                      <tbody id="tblDanhSachSP"></tbody>
+                    </table>
+                    <!-- END TABLE SẢN PHẨM -->
+                  </div>
+                  <br />
 
 
+                <button id="buy-tickets">
+                    Pay <i class="fa-regular fa-credit-card"></i>
+                </button>
+                <button id="buy-tickets">
+                    Clear <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a> </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Oder -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-tickets')
+        const modal =document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose =document.querySelector('.js-modal-close')
+
+        //hàm hiển thị modal mua vé (thêm class open vào modal)
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+         //hàm ẩn modal mua vé (gỡ bỏ class open của modal)
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+        // lặp qua từng thẻ button và hành vi nghe click)
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click',showBuyTickets)
+        }
+        // nghe hành vi click vào button close
+        modalClose.addEventListener('click',hideBuyTickets)
+        //nghe hành vi click và đóng container lại
+        modal.addEventListener('click',hideBuyTickets)
+        //nghe hành vi click và ngăn chặn hành vi nổi bọt 
+        modalContainer.addEventListener('click',function(event){
+            event.stopPropagation();
+        })
+
+    </script>
 
         <!-- JS BS 4 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
 </html>
