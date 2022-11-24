@@ -43,6 +43,7 @@ function renderProductList(data) {
 
 // let productList = [];
 // filterProductList = (type) => {
+//     let productList = [];
 //     const data = this.productList.filter((element) => {
 //         if(type === "all"){
 //             return true;
@@ -55,23 +56,12 @@ function renderProductList(data) {
 //     return data;
 // }
 
-
-domID("selLoai").onchange = (event) => {
-  for(let i = 0; i < this.productService.length; i){
-    var type = domID("selLoai").value;
-    if(type === "loai1"){
-      renderProductList(type)
-    }
-
-  }
-
-
-
-  // const value = event.target.value;
-  // const data = productService.filterProductList(value);
-
-  renderProductList(data)
-};
+// domID("selLoai").onchange = (event) => {
+//   const value = event.target.value;
+//   const data = productService.filterProductList(value);
+//   // for(let i = 0; i < this.productService.length; i)
+//       renderProductList(data)
+// };
 
 
 
