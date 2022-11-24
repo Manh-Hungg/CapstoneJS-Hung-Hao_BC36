@@ -76,7 +76,7 @@ p {
   font-family: "Jost", sans-serif;
 }
 .pd-50 {
-  padding: 200px 50px;
+  padding: 120px 50px;
 }
 
 .blog {
@@ -345,6 +345,23 @@ ul {
 button#buy-tickets {
   margin-bottom: 5px;
 }
+
+input#txtSearch, button#btnSearch {
+  margin: 10px 0px -5px 70px;
+}
+button#btnSearch:hover{
+  background-color: #cd1818;
+  color: #000;
+}
+.col-2.type.form-group {
+  margin-bottom: 2px;
+  margin-left: 30px;
+}
+
+.pds{
+  margin:80px 30px 0px 20px;
+}
+
 
 @keyframes modalFadeIn{
     from{opacity:0;
