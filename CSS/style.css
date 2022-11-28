@@ -361,8 +361,6 @@ button#btnSearch:hover{
 .pds{
   margin:80px 30px 0px 20px;
 }
-
-
 @keyframes modalFadeIn{
     from{opacity:0;
         transform: translateY(-150px);
