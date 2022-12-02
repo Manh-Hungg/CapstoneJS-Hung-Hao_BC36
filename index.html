@@ -32,23 +32,7 @@
   <body>
     <header class="header__pooch">
       <nav class="navbar navbar-expand-lg navbar-light bg-r">
-        <i class="ficon f-logo"></i><span>Sốp</span>
-
-        <div class="col-2 form-group">
-          <input
-            oninput="searchSanPham()"
-            placeholder="Nhập tên Điện Thoại"
-            type="text"
-            class="form-control"
-            id="txtSearch"
-          />
-        </div>
-        <div class="col-1 form-group">
-          <button id="btnSearch" class="btn btn-danger">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-
+        <i class="ficon f-logo"><span class="sop">Sốp</span></i>
         <div class="col-2 type form-group">
           <select class="custom-select" id="type">
             <option value="all">Loại Điện Thoại</option>
@@ -74,10 +58,11 @@
             <li class="nav-item">
               <a class="nav-link">Phụ kiện</a>
             </li>
-            <ul>
-              <li><i class="fa-solid fa-cart-shopping js-buy-tickets"></i></li>
-            </ul>
           </ul>
+        </div>
+
+        <div>
+          <a><i class="fa-solid fa-cart-shopping js-buy-tickets"></i></a>
         </div>
       </nav>
     </header>
@@ -124,35 +109,6 @@
       </div>
     </div>
 
-    <!-- Oder -->
-    <script>
-      const buyBtns = document.querySelectorAll(".js-buy-tickets");
-      const modal = document.querySelector(".js-modal");
-      const modalContainer = document.querySelector(".js-modal-container");
-      const modalClose = document.querySelector(".js-modal-close");
-
-      //hàm hiển thị modal mua vé (thêm class open vào modal)
-      function showBuyTickets() {
-        modal.classList.add("open");
-      }
-      //hàm ẩn modal mua vé (gỡ bỏ class open của modal)
-      function hideBuyTickets() {
-        modal.classList.remove("open");
-      }
-      // lặp qua từng thẻ button và hành vi nghe click)
-      for (const buyBtn of buyBtns) {
-        buyBtn.addEventListener("click", showBuyTickets);
-      }
-      // nghe hành vi click vào button close
-      modalClose.addEventListener("click", hideBuyTickets);
-      //nghe hành vi click và đóng container lại
-      modal.addEventListener("click", hideBuyTickets);
-      //nghe hành vi click và ngăn chặn hành vi nổi bọt
-      modalContainer.addEventListener("click", function (event) {
-        event.stopPropagation();
-      });
-    </script>
-
     <!-- JS BS 4 -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -165,6 +121,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./controllers/btnCart.js"></script>
     <script src="./models/product.js"></script>
     <script src="./services/product.js"></script>
     <script src="./controllers/index.js"></script>

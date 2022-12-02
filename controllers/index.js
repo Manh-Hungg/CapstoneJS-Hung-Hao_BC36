@@ -43,7 +43,6 @@ function renderProductList(data) {
   document.getElementById("tblDanhSachSP").innerHTML = html;
 }
 //END phần 1,2,3
-
 // Phần 4:
 function filterProductList(type) {
   let list = [];
@@ -99,20 +98,20 @@ function cartList(id) {
     }
     renderCart(list);
     total();
-    saveLocal();
+    saveData();
   });
 }
 
 const renderCart = (list) => {
   let html = "";
   for (let i = 0; i < list.length; i++) {
-    const totalPrice = () => {
+    const priceProduct = () => {
       return list[i].product.price * list[i].quantity;
     };
     html += `<tr>
           <td><img style ="height:50px" src = "${list[i].product.img}"></td>
           <td class ="nameProduct">${list[i].product.name}</td>
-          <td>${totalPrice()}$</td>
+          <td>${priceProduct()}$</td>
           <td>
             <div class="btn_add">
               <input class="minus is-form" onclick="btnSub(${
@@ -137,7 +136,6 @@ const renderCart = (list) => {
 };
 
 // END phần 5,6,7,8
-//=======================================================================
 
 const btnAdd = (id) => {
   for (let i in list) {
@@ -146,9 +144,9 @@ const btnAdd = (id) => {
     }
   }
   renderCart(list);
-
-  saveLocal();
+  saveData();
 };
+
 const btnSub = (id) => {
   for (let i in list) {
     if (list[i].product.id == id && list[i].quantity > 1) {
@@ -156,9 +154,9 @@ const btnSub = (id) => {
     }
   }
   renderCart(list);
-
-  saveLocal();
+  saveData();
 };
+
 const total = () => {
   let totalMoney = 0;
   for (let i in list) {
@@ -183,38 +181,38 @@ const findId = (id) => {
 const deleteProduct = (id) => {
   let idx = findId(id);
   list.splice(idx, 1);
-
   renderCart(list);
-  saveLocal();
+  saveData();
 };
 
 document.querySelector(".pay").onclick = () => {
   list = [];
   renderCart(list);
+  saveData();
 };
 
 document.querySelector(".clearAll").onclick = () => {
   list = [];
   renderCart(list);
+  saveData();
 };
 
-const saveLocal = () => {
+const saveData = () => {
   let listJSON = JSON.stringify(list);
 
   localStorage.setItem("listCart", listJSON);
 };
 
-const getLocal = () => {
+const getData = () => {
   let listJSON = localStorage.getItem("listCart");
   if (!listJSON) return;
-
-  let list = JSON.parse(listJSON);
-
+  list = JSON.parse(listJSON);
   renderCart(list);
 };
 
 // ====================================================================
-window.onload = function () {
-  getLocal();
+
+window.onload = () => {
   getProductList();
+  getData();
 };

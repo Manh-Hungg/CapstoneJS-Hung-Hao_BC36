@@ -244,7 +244,8 @@ i.fa-solid.fa-cart-shopping:hover {
 }
 .header__pooch .navbar-nav {
   text-align: center;
-  padding: 5px 70px 0 0;
+  padding: 5px 0px 0 0;
+  margin: 0px;
 }
 
 .bg-r {
@@ -334,6 +335,15 @@ ul {
   display: block;
   font-size: 15px;
   margin-bottom: 12px;
+}
+.sop{
+  margin-left: 100%;
+}
+.custom-select{
+  margin-left: 100%;
+}
+.collapse{
+  margin-left: 0;
 }
 .modal-input {
   font-size: 15px;
