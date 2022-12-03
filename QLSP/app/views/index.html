@@ -15,12 +15,24 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <style>
+      .img {
+        background-image: url("https://images.fpt.shop/unsafe/fit-in/filters:quality(80):fill(transparent)/fptshop.com.vn/Uploads/Originals/2022/11/14/638040405039065739_desk-header-bg.png");
+        background-color: rgb(190, 23, 0);
+        overflow: hidden;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        position: relative;
+        padding-top: 0;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="container">
-      <header class="display-4 my-4">Quản lí sản phầm FPT Sốp</header>
-      <!-- Phan tab menu -->
+    <div class="container ">
+      <header class="display-4 my-4">Quản lí sản phẩm FPT Sốp</header>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
           <a
@@ -33,13 +45,10 @@
         </li>
       </ul>
       <br />
-      <!-- Tab panes -->
       <div class="tab-content">
-        <!--Danh sách sản phẩm -->
         <div role="tabpanel" class="tab-pane in active" id="DanhSachSP">
           <div class="row">
             <div class="col-md-8">
-              <!-- BEGIN BUTTOM THÊM MỚI -->
               <button
                 id="btnThemSP"
                 class="btn btn-success"
@@ -49,10 +58,8 @@
                 <i class="fa fa-plus mr-1"></i>
                 Thêm Mới
               </button>
-              <!-- END BUTTON THÊM MỚI -->
             </div>
             <div class="col-md-4">
-              <!-- BEGIN TÌM KIẾM -->
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -67,12 +74,10 @@
                   ></span>
                 </div>
               </div>
-              <!-- END TÌM KIẾM -->
             </div>
           </div>
           <div class="clear-fix"></div>
           <div class="tblSanPham" id="tblSanPham">
-            <!-- BEGIN TABLE SẢN PHẨM -->
             <table class="table table-bordered">
               <thead>
                 <th>STT</th>
@@ -84,27 +89,19 @@
               </thead>
               <tbody id="tblDanhSachSP"></tbody>
             </table>
-            <!-- END TABLE SẢN PHẨM -->
           </div>
           <br />
         </div>
-        <!-- Kết thúc danh sách sản phẩm -->
       </div>
-
-      <!--KetThuc Tabmenu-->
-
-      <!-- The Modal -->
       <div class="modal fade" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
-            <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">Modal Heading</h4>
               <button type="button" class="close" data-dismiss="modal">
                 &times;
               </button>
             </div>
-            <!-- Modal body -->
             <div class="modal-body" id="modalForm">
               <div class="form-group">
                 <label>Tên Sản Phẩm</label>
@@ -143,7 +140,6 @@
                 <span class="sp-thongbao text-danger" id="descSP"></span>
               </div>
             </div>
-            <!-- Modal footer -->
             <div class="modal-footer"></div>
           </div>
         </div>
