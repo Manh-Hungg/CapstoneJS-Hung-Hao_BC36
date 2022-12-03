@@ -19,10 +19,7 @@
 
   <body>
     <div class="container">
-
-      <header class="display-4 my-4">
-         Quản lí sản phầm FPT Sốp
-      </header>
+      <header class="display-4 my-4">Quản lí sản phầm FPT Sốp</header>
       <!-- Phan tab menu -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
@@ -34,13 +31,12 @@
             >Danh sách sản phẩm</a
           >
         </li>
-        
       </ul>
       <br />
       <!-- Tab panes -->
       <div class="tab-content">
         <!--Danh sách sản phẩm -->
-        <div role="tabpanel" class="tab-pane  in active" id="DanhSachSP">
+        <div role="tabpanel" class="tab-pane in active" id="DanhSachSP">
           <div class="row">
             <div class="col-md-8">
               <!-- BEGIN BUTTOM THÊM MỚI -->
@@ -83,7 +79,7 @@
                 <th>Tên Sản Phẩm</th>
                 <th>Giá</th>
                 <th>Hình Ảnh</th>
-                <th>Mô Tả</th>                
+                <th>Mô Tả</th>
                 <th>Action</th>
               </thead>
               <tbody id="tblDanhSachSP"></tbody>
@@ -92,7 +88,7 @@
           </div>
           <br />
         </div>
-        <!-- Kết thúc danh sách sản phẩm -->       
+        <!-- Kết thúc danh sách sản phẩm -->
       </div>
 
       <!--KetThuc Tabmenu-->
@@ -109,7 +105,7 @@
               </button>
             </div>
             <!-- Modal body -->
-            <div class="modal-body">
+            <div class="modal-body" id="modalForm">
               <div class="form-group">
                 <label>Tên Sản Phẩm</label>
                 <input
@@ -117,6 +113,7 @@
                   class="form-control"
                   placeholder="Nhập vào tên sản phẩm"
                 />
+                <span class="sp-thongbao text-danger" id="nameSP"></span>
               </div>
               <div class="form-group">
                 <label>Giá</label>
@@ -125,7 +122,8 @@
                   class="form-control"
                   placeholder="Nhập vào giá"
                 />
-              </div>             
+                <span class="sp-thongbao text-danger" id="priceSP"></span>
+              </div>
               <div class="form-group">
                 <label>Hình Ảnh</label>
                 <input
@@ -133,6 +131,7 @@
                   class="form-control"
                   placeholder="Nhập vào hình sản phẩm"
                 />
+                <span class="sp-thongbao text-danger" id="imgSP"></span>
               </div>
               <div class="form-group">
                 <label>Mô tả</label>
@@ -141,6 +140,7 @@
                   class="form-control"
                   placeholder="Nhập vào mô tả"
                 />
+                <span class="sp-thongbao text-danger" id="descSP"></span>
               </div>
             </div>
             <!-- Modal footer -->
