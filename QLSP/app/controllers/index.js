@@ -98,6 +98,7 @@ function deleteProduct(id) {
     getProductList();
   });
 }
+
 reset = () => {
   domID("nameSP").style.display = "none";
   domID("priceSP").style.display = "none";

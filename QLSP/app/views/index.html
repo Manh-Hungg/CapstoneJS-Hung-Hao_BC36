@@ -20,19 +20,22 @@
       .img {
         background-image: url("https://images.fpt.shop/unsafe/fit-in/filters:quality(80):fill(transparent)/fptshop.com.vn/Uploads/Originals/2022/11/14/638040405039065739_desk-header-bg.png");
         background-color: rgb(190, 23, 0);
-        overflow: hidden;
         background-position: top center;
         background-repeat: no-repeat;
         background-size: 100% auto;
         position: relative;
         padding-top: 0;
       }
+      .cl-w{
+        background-color: #f8f9fa !important;
+      }
     </style>
   </head>
 
-  <body>
-    <div class="container ">
-      <header class="display-4 my-4">Quản lí sản phẩm FPT Sốp</header>
+  <body class="img">
+    <div class="container cl-w">
+      <header class="display-4 my-4 text-center">
+        Quản lí sản phẩm FPT Sốp</header>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
           <a
@@ -130,6 +133,15 @@
                 />
                 <span class="sp-thongbao text-danger" id="imgSP"></span>
               </div>
+              <!-- <div class="form-group">
+                <label>Camera Trước - Camera Sau</label>
+                <input
+                  id="CameraSP"
+                  class="form-control"
+                  placeholder="Nhập vào thông số camera"
+                />
+                <span class="sp-thongbao text-danger" id="descSP"></span>
+              </div> -->
               <div class="form-group">
                 <label>Mô tả</label>
                 <input
